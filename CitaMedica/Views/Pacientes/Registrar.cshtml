@@ -1,0 +1,29 @@
+﻿@model UsuarioModel
+
+@{
+	ViewData["Title"] = "Agendar cita";
+}
+
+<h1>Agendar cita</h1>
+<form method="post" class="form-floating">
+	<div class="form-group">
+		<label asp-for="IdPaciente">Cedula</label>
+		<input class="form-control" asp-for=IdPaciente/>
+	</div>
+	<div class="form-group">
+		<label asp-for="NPaciente">Nombre</label>
+		<input class="form-control" asp-for=NPaciente />
+	</div>
+	<div class="form-group">
+		<label asp-for="area">Area</label>
+		<input class="form-control" asp-for=area />
+	</div>
+	<div class="form-group">
+		<label asp-for="fecha">Fecha</label>
+		<input class="form-control" asp-for=fecha />
+	</div>
+	<br />
+	<div class="text-center panel-body">
+		<button type="submit" class="btn btn-sm btn-primary">Agendar</button>
+	</div>
+</form>
